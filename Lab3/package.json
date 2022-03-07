@@ -1,0 +1,29 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "lab3",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageDirectory": "coverage-report",
+    "coverageReporters": [
+      "lcov"
+    ],
+    "reporters": [
+      "default",
+      "./node_modules/jest-html-reporters"
+    ]
+  },
+  "author": "khansun",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.4.5",
+    "jest-html-reporters": "^3.0.3"
+  }
+}

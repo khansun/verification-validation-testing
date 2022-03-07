@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<alloy>
+
+<view nodetheme="Martha" hidePrivate="no" hideMeta="no">
+
+<defaultnode/>
+
+<defaultedge/>
+
+<node>
+   <type name="Int"/>
+   <type name="String"/>
+   <type name="univ"/>
+   <type name="seq/Int"/>
+</node>
+
+<node visible="no">
+   <type name="Person"/>
+</node>
+
+</view>
+
+</alloy>
