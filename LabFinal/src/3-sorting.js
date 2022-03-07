@@ -16,7 +16,7 @@ function selectionSort(arr) {
     }
     return arr;
 }
-console.log(selectionSort([2,1,4,3]))
+//console.log(selectionSort([2,1,4,3]))
 module.exports = {
     selectionSort
 }

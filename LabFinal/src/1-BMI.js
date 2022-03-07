@@ -8,7 +8,7 @@ function calculateBMI(heightInCM, weightInKG)
         return (weightInKG / ((heightInCM*heightInCM)/10000)).toFixed(2);
     }
 }
-console.log(calculateBMI(180,60));
+// console.log(calculateBMI(180,60));
 
 module.exports = {
     calculateBMI

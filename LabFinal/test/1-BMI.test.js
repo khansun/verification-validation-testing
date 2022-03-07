@@ -2,11 +2,15 @@ const bmi = require("../src/1-BMI.js");
 
 describe("calculateBMI", () => {
     var BVAdata = [
+        ["false", true,  "Please provide a valid height"],
+        ["false", "true",  "Please provide a valid height"],
+        [true, "true",  "Please provide a valid weight"],
+        [false, "false",  "Please provide a valid weight"],
+        [100, 20, "20.00"],
         [-1, 100, "Please provide a valid height"],
         [0, 50, "Infinity"],
         [0, 0, "NaN"],
-        [0, -1, "Please provide a valid weight"],
-        [100, 20, "20.00"]
+        [0, -1, "Please provide a valid weight"]
     ]
     describe.each(BVAdata)('BVA: calculateBMI(%i, %i), Expected: %i', (heightInCM, weightInKG, expected) => {
         test(`returns${bmi.calculateBMI(heightInCM, weightInKG)}`, () => {
@@ -25,4 +29,3 @@ describe("calculateBMI", () => {
         }); 
     });
 });
-
